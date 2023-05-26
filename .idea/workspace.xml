@@ -4,7 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="second commit" />
+    <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/InterceptorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/UserInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/intercepter/PassportInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/Sex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/UserInfoModifyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/YesOrNo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/MyCustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/DesensitizationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/IPUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MyInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/DayCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Id.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Sid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Ip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Serializes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/RegistLoginBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/UpdatedUserBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/UsersVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Knife4jConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Knife4jConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/GraceJSONResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/GraceJSONResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/ResponseStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/ResponseStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/RedisOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/RedisOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +70,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,41 +100,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8 (3)",
-    "last_opened_file_path": "D:/douyin/douyin-master/wangguo-red-book-dev/book-mapper/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "adfb4822068646fa955f235a5b79ba9d"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8 (3)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/douyin/douyin-master/wangguo-red-book-dev/book-common/src/main/java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.42195123&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;adfb4822068646fa955f235a5b79ba9d&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-common\src\main\java" />
+      <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-common\src\main\java\com\wangguo\exceptions" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-mapper\src\main\resources" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-model\src\main\java" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-mapper\src\main\java\com\wangguo\mapper" />
-      <recent name="CommentMapper VlogMapper UsersMapper MyLikedVlogMapper FansMapper" />
-      <recent name="D:\douyin\douyin-master\wangguo-red-book-dev" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangguo.utils" />
+      <recent name="com.wangguo.service" />
       <recent name="com.wangguo.my" />
     </key>
   </component>
@@ -163,7 +231,8 @@
       <workItem from="1684766938962" duration="4461000" />
       <workItem from="1684810664900" duration="3430000" />
       <workItem from="1684814129559" duration="13191000" />
-      <workItem from="1684843715874" duration="8488000" />
+      <workItem from="1684843715874" duration="45914000" />
+      <workItem from="1685087525411" duration="10613000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -207,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684924303575</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="second commit">
+      <created>1684924721666</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684924721666</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,5 +314,9 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="second commit" />
     <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

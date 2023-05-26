@@ -22,8 +22,8 @@ public class Users implements Serializable {
     /**
      * 慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
      */
-    @Column(name = "imooc_num")
-    private String imoocNum;
+    @Column(name = "idouyin_num")
+    private String idouyinNum;
 
     /**
      * 头像
@@ -74,8 +74,8 @@ public class Users implements Serializable {
     /**
      * 慕课号能否被修改，1：默认，可以修改；0，无法修改
      */
-    @Column(name = "can_imooc_num_be_updated")
-    private Integer canImoocNumBeUpdated;
+    @Column(name = "can_idouyin_num_be_updated")
+    private Integer canIdouyinNumBeUpdated;
 
     /**
      * 创建时间 创建时间
@@ -144,19 +144,19 @@ public class Users implements Serializable {
     /**
      * 获取慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
      *
-     * @return imooc_num - 慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
+     * @return idouyin_num - 慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
      */
-    public String getImoocNum() {
-        return imoocNum;
+    public String getIdouyinNum() {
+        return idouyinNum;
     }
 
     /**
      * 设置慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
      *
-     * @param imoocNum 慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
+     * @param idouyinNum 慕课号，类似头条号，抖音号，公众号，唯一标识，需要限制修改次数，比如终生1次，每年1次，每半年1次等，可以用于付费修改。
      */
-    public void setImoocNum(String imoocNum) {
-        this.imoocNum = imoocNum;
+    public void setIdouyinNum(String idouyinNum) {
+        this.idouyinNum = idouyinNum;
     }
 
     /**
@@ -324,19 +324,19 @@ public class Users implements Serializable {
     /**
      * 获取慕课号能否被修改，1：默认，可以修改；0，无法修改
      *
-     * @return can_imooc_num_be_updated - 慕课号能否被修改，1：默认，可以修改；0，无法修改
+     * @return can_idouyin_num_be_updated - 慕课号能否被修改，1：默认，可以修改；0，无法修改
      */
-    public Integer getCanImoocNumBeUpdated() {
-        return canImoocNumBeUpdated;
+    public Integer getCanIdouyinNumBeUpdated() {
+        return canIdouyinNumBeUpdated;
     }
 
     /**
      * 设置慕课号能否被修改，1：默认，可以修改；0，无法修改
      *
-     * @param canImoocNumBeUpdated 慕课号能否被修改，1：默认，可以修改；0，无法修改
+     * @param canIdouyinNumBeUpdated 慕课号能否被修改，1：默认，可以修改；0，无法修改
      */
-    public void setCanImoocNumBeUpdated(Integer canImoocNumBeUpdated) {
-        this.canImoocNumBeUpdated = canImoocNumBeUpdated;
+    public void setCanIdouyinNumBeUpdated(Integer canIdouyinNumBeUpdated) {
+        this.canIdouyinNumBeUpdated = canIdouyinNumBeUpdated;
     }
 
     /**

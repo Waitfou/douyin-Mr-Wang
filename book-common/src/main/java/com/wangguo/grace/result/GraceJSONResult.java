@@ -9,7 +9,7 @@ public class GraceJSONResult {
 
     private Boolean success;
 
-    private Object data;
+    private Object data; //data的类型可以是任何数据类型，因为Object类是所有类的父类
 
     /**
      * 成功返回，带有数据的，直接往ok方法丢data数据即可
@@ -52,11 +52,33 @@ public class GraceJSONResult {
     public static GraceJSONResult errorMsg(String msg) {
         return new GraceJSONResult(ResponseStatusEnum.FAILED, msg);
     }
-    public GraceJSONResult(ResponseStatusEnum responseStatus, Object data) {
 
+    /**
+     * 将枚举类型的错误状态信息封装成GraceJSONResult信息，便于使用
+     * @param responseStatus
+     * @return
+     */
+    public static GraceJSONResult errorCustom(ResponseStatusEnum responseStatus) {
+        return new GraceJSONResult(responseStatus);
     }
-    public GraceJSONResult(ResponseStatusEnum reponseStatus, String msg){
-
+    public static GraceJSONResult exception(ResponseStatusEnum responseStatus) {
+        return new GraceJSONResult(responseStatus);
+    }
+    public GraceJSONResult(ResponseStatusEnum responseStatus) {
+        this.status = responseStatus.status();
+        this.msg = responseStatus.msg();
+        this.success = responseStatus.success();
+    }
+    public GraceJSONResult(ResponseStatusEnum responseStatus, Object data) {
+        this.status = responseStatus.status();
+        this.msg = responseStatus.msg();
+        this.success = responseStatus.success();
+        this.data = data;
+    }
+    public GraceJSONResult(ResponseStatusEnum responseStatus, String msg){
+        this.status = responseStatus.status();
+        this.msg = msg;
+        this.success = responseStatus.success();
     }
     public GraceJSONResult() {
 

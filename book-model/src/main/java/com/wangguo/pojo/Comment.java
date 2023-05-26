@@ -5,6 +5,10 @@ import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * POJO是持久化对象，需要实现序列化接口，一个POJO持久化之后就是PO
+ * PO, VO, DTO都是典型的POJO
+ */
 public class Comment implements Serializable {
     @Id
     private String id;

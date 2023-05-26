@@ -30,5 +30,6 @@
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-springdoc-ui</artifactId>
         </dependency>
+
     </dependencies>
 </project>

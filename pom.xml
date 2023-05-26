@@ -57,7 +57,7 @@
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql-connector-java.version}</version>
+                <version>8.0.21</version>
             </dependency>
             <!-- mybatis -->
             <dependency>
@@ -66,6 +66,7 @@
                 <version>${mybatis-spring-boot-starter.version}</version>
             </dependency>
             <!-- 通用mapper逆向工具 -->
+            <!--mapper-spring-boot-starter（tkmybatis基于springboot的依赖包）依赖于mybatis和mybatis-spring -->
             <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>

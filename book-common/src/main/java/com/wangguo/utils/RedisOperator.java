@@ -6,6 +6,7 @@ import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.connection.StringRedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
@@ -15,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis 工具类, 对redis进行操作的类
  */
+@Component
 public class RedisOperator {
     /**
      * 在使用@Autowired时，首先在容器中查询对应类型的bean
