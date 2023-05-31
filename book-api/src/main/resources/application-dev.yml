@@ -22,3 +22,12 @@ spring:
     port: 6379
     database: 0
     password: 12345678
+# minio配置
+minio: # 注意是小写
+  endpoint: http://192.168.81.130:9000 # MinIO服务地址
+  fileHost: http://192.168.81.130:9000 # 文件地址host
+  bucketName: idouyin # 存储桶bucket名称
+  accessKey: ROOT # 用户名
+  secretKey: 12345678 # 密码
+  imgSize:   # 图片大小限制，单位：m
+  fileSize: # 文件大小限制，单位：m

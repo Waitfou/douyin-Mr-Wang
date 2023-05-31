@@ -4,63 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/InterceptorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/intercepter/PassportInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/UserInfoModifyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/YesOrNo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/MyCustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/DesensitizationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/IPUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MyInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Code.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/DayCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Id.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/InvalidSystemClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/RandomCodeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Sid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/WorkerIdStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/DayPrefixRandomCodeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/DefaultRandomCodeStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/DefaultWorkerIdStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/strategy/FileLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/HttpReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/IPv4Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Ip.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Props.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Serializes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/org/n3r/idworker/utils/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/RegistLoginBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/UpdatedUserBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/UsersVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/MinIOConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/FansController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/VlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/intercepter/UserTokenInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/FileTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/PagedGridResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/CommentMapperCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/FansMapperCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/VlogMapperCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapperCustom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/FansMapperCustom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/VlogMapperCustom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/CommentBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/VlogBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/CommentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/FansVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/IndexVlogVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/VlogerVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/FansService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/MsgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/MsgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Knife4jConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Knife4jConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/UserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/GraceJSONResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/GraceJSONResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/ResponseStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/ResponseStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/RedisOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/RedisOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/UsersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/UsersMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +56,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -140,6 +126,7 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wangguo.utils" />
+      <recent name="com.wangguo" />
       <recent name="com.wangguo.service" />
       <recent name="com.wangguo.my" />
     </key>
@@ -232,7 +219,7 @@
       <workItem from="1684810664900" duration="3430000" />
       <workItem from="1684814129559" duration="13191000" />
       <workItem from="1684843715874" duration="45914000" />
-      <workItem from="1685087525411" duration="10613000" />
+      <workItem from="1685087525411" duration="98756000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -283,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684924721666</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit">
+      <created>1685110631620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685110631620</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +307,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="第一次提交" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

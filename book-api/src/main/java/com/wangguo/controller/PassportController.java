@@ -90,7 +90,7 @@ public class PassportController extends BaseInfoProperties {
         // 用户注册成功之后，删除redis中的短信验证码
         redis.del(MOBILE_SMSCODE+":"+mobile);
 
-        // 返回用户信息，包括token令牌
+        // 返回用户信息，包括token令牌，只要用户登录 就会有一个token
         UsersVO usersVO = new UsersVO();
         // 因为要返回一个包含token的用户信息，因此不能直接返回user，因此可以创建一个新的usersVO（包含token）字段
         // 然后把user的信息放入usersVO，再把token信息放入。就可以把usersVO返回给前端，前端就可以获得token信息

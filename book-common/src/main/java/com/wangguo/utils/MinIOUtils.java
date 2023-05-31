@@ -25,10 +25,10 @@ public class MinIOUtils {
 
     private static MinioClient minioClient;
 
-    private static String endpoint;
-    private static String bucketName;
-    private static String accessKey;
-    private static String secretKey;
+    private static String endpoint; // minio服务器地址
+    private static String bucketName; // minio中桶的名字
+    private static String accessKey; // minio账号
+    private static String secretKey; // minio密码
     private static Integer imgSize;
     private static Integer fileSize;
 

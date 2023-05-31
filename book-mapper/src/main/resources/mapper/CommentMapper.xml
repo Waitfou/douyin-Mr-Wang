@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wangguo.mapper.CommentMapper" >
+  <!--
+      FIXME
+      思考：阿里规范明确规定不能超过三表关联，这里达到了四张表
+      TODO 待优化
+   -->
   <resultMap id="BaseResultMap" type="com.wangguo.pojo.Comment" >
     <!--
       WARNING - @mbg.generated

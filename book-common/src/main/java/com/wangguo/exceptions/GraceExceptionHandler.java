@@ -21,11 +21,16 @@ import java.util.Map;
 @ControllerAdvice
 public class GraceExceptionHandler {
 
+    /**
+     * 拦截MyCustomException类型的异常
+     * @param e MyCustomException异常
+     * @return 返回异常信息给前端，便于前端展示给用户看
+     */
     @ExceptionHandler(MyCustomException.class)
     @ResponseBody //@Responsebody注解表示该方法的返回的结果直接写入 HTTP 响应正文中，一般在异步获取数据时使用；
     public GraceJSONResult returnMyException(MyCustomException e) {
         e.printStackTrace();
-        return GraceJSONResult.exception(e.getResponseStatusEnum()); //把异常信息放入回复实体中
+        return GraceJSONResult.exception(e.getResponseStatusEnum()); //把异常信息放入回复实体中，并且存放在ResponseBody中返回给前端
     }
 
     // 如果发生了MethodArgumentNotValidException.class异常，就会被这个拦截器拦截处理
@@ -44,13 +49,13 @@ public class GraceExceptionHandler {
 //        return GraceJSONResult.errorMap(map);
 //    }
 //
-//    @ExceptionHandler(MaxUploadSizeExceededException.class)
-//    @ResponseBody
-//    public GraceJSONResult returnMaxUploadSize(MaxUploadSizeExceededException e) {
-////        e.printStackTrace();
-//        return GraceJSONResult.errorCustom(ResponseStatusEnum.FILE_MAX_SIZE_2MB_ERROR);
-//    }
-//
+    @ExceptionHandler(MaxUploadSizeExceededException.class)
+    @ResponseBody
+    public GraceJSONResult returnMaxUploadSize(MaxUploadSizeExceededException e) {
+//        e.printStackTrace();
+        return GraceJSONResult.errorCustom(ResponseStatusEnum.FILE_MAX_SIZE_2MB_ERROR);
+    }
+
     public Map<String, String> getErrors(BindingResult result) {
         Map<String, String> map = new HashMap<>();
         List<FieldError> errorList = result.getFieldErrors();
