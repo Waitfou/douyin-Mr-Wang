@@ -120,8 +120,8 @@ public interface VlogService {
                                                Integer page,
                                                Integer pageSize);
 
-//    /**
-//     * 根据主键查询vlog
-//     */
-//    public Vlog getVlog(String id);
+    /**
+     * 根据主键查询vlog
+     */
+    public Vlog getVlog(String id);
 }

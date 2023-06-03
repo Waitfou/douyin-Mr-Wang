@@ -6,6 +6,8 @@ server:
 
 
 spring:
+  application:
+    name: wangguo-idouyin-nacos
   profiles:
     active: dev
   servlet:

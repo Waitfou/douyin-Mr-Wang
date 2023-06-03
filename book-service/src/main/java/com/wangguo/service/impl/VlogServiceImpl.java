@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import com.wangguo.base.BaseInfoProperties;
 import com.wangguo.bo.VlogBO;
+import com.wangguo.enums.MessageEnum;
 import com.wangguo.enums.YesOrNo;
 import com.wangguo.grace.result.GraceJSONResult;
 import com.wangguo.mapper.MyLikedVlogMapper;
@@ -197,12 +198,20 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
         likedVlog.setVlogId(vlogId); // 被喜欢的视频
         likedVlog.setUserId(userId); // 喜欢的用户
         myLikedVlogMapper.insert(likedVlog);
-        // 系统消息：点赞短视频
-//        Vlog vlog = this.getVlog(vlogId);
-//        Map msgContent = new HashMap();
-//        msgContent.put("vlogId", vlogId);
-//        msgContent.put("vlogCover", vlog.getCover());
 
+        //系统消息：点赞短视频
+        Vlog vlog = this.getVlog(vlogId);
+        Map msgContent = new HashMap();
+        msgContent.put("vlogId", vlogId);
+        msgContent.put("vlogCover", vlog.getCover());
+        msgService.createMsg(userId,
+                            vlog.getVlogerId(),
+                            MessageEnum.LIKE_VLOG.type,
+                            msgContent);
+    }
+    @Override
+    public Vlog getVlog(String id) {
+        return vlogMapper.selectByPrimaryKey(id);
     }
 
     /**

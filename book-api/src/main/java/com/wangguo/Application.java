@@ -3,6 +3,7 @@ package com.wangguo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
@@ -15,6 +16,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan(basePackages = "com.wangguo.mapper") //在application启动类上添加mapper扫描注解，表示要扫描到mapper接口
 //默认情况下，启动器只能扫描到启动类所在包下的所有类，如果不在此包下面的，要使用@ComponentScan写明要扫描的类
 @ComponentScan(basePackages = {"com.wangguo", "org.n3r.idworker"})
+@EnableMongoRepositories // 开启mongodb的使用
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

@@ -2,16 +2,23 @@ package com.wangguo.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.wangguo.base.BaseInfoProperties;
+import com.wangguo.base.RabbitMQConfig;
+import com.wangguo.enums.MessageEnum;
 import com.wangguo.enums.YesOrNo;
 import com.wangguo.mapper.FansMapper;
 import com.wangguo.mapper.FansMapperCustom;
+import com.wangguo.mo.MessageMO;
 import com.wangguo.pojo.Fans;
 import com.wangguo.service.FansService;
+import com.wangguo.service.MsgService;
+import com.wangguo.utils.JsonUtils;
 import com.wangguo.utils.PagedGridResult;
 import com.wangguo.vo.FansVO;
 import com.wangguo.vo.VlogerVO;
+import io.github.classgraph.json.JSONUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.n3r.idworker.Sid;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,7 +43,13 @@ public class FansServiceImpl extends BaseInfoProperties implements FansService {
     private FansMapper fansMapper;
 
     @Autowired
+    private MsgService msgService;
+    @Autowired
     private FansMapperCustom fansMapperCustom;
+
+    // 简化同步 RabbitMQ 访问（发送和接收消息）的帮助程序类。
+    @Autowired
+    public RabbitTemplate rabbitTemplate;
     @Transactional // 关注的行为必须声明好事务，因为关注的时候可能只是关注了，但是没有把朋友关系更新，那么此时就要回退
     @Override
     public void doFollow(String myId, String vlogerId) {
@@ -58,6 +71,15 @@ public class FansServiceImpl extends BaseInfoProperties implements FansService {
             fans.setIsFanFriendOfMine(YesOrNo.NO.type);
         }
         fansMapper.insert(fans);
+
+        // 关注消息入库, 关注消息的消息实体为null
+//        msgService.createMsg(myId, vlogerId, MessageEnum.FOLLOW_YOU.type, null);
+        MessageMO messageMO = new MessageMO();
+        messageMO.setFromUserId(myId);
+        messageMO.setToUserId(vlogerId);
+
+        // 优化：使用mq异步解耦，防止对非重要消息入库失败之后对已经保存的重要消息进行回滚
+        rabbitTemplate.convertAndSend(RabbitMQConfig.EXCHANGE_MSG, "sys.msg." + MessageEnum.FOLLOW_YOU.enValue, JsonUtils.objectToJson(messageMO));
     }
 
     public Fans queryFansRelationship(String fanId, String vlogerId) {

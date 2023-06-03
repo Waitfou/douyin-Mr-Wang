@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        group: 192.168.81.130:8848 # nacos所在地址
+        file-extension: yaml  # yaml配置文件

@@ -10,6 +10,9 @@ import java.util.Date;
  * PO, VO, DTO都是典型的POJO
  */
 public class Comment implements Serializable {
+    /**
+     * 该条留言的Id
+     */
     @Id
     private String id;
 

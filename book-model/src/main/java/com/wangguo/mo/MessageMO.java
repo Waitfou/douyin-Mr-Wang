@@ -18,14 +18,19 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Document("message")
-public class MessageMO {
+@Document("message") // 主要包括:关注消息/回复消息/点赞消息等
+public class MessageMO {   // MO就是mongodbObject的简写
     @Id // 此注解主要用于非关系型数据中
+
+
+
     private String id; //消息主键id
-    @Field("fromUserId") //代表MongoDB的一个字段
+    @Field("fromUserId") //代表MongoDB的一个字段 （field类似于mysql中的列，但是很灵活）
     private String fromUserId; // 消息来自的用户id
     @Field("fromNickName")
     private String fromNickName; // 消息来自的用户昵称
+    @Field("fromFace")
+    private String fromFace;
     @Field("toUserId")
     private String toUserId; // 消息发送到某对象的用户id
     @Field("msgType")

@@ -5,48 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/MinIOConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/FansController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/VlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/intercepter/UserTokenInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/FileTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/PagedGridResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/CommentMapperCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/FansMapperCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/VlogMapperCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapperCustom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/FansMapperCustom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/VlogMapperCustom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/CommentBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/bo/VlogBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/CommentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/FansVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/IndexVlogVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/VlogerVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/FansService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/MsgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/MsgServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/RabbitMQConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/MsgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/intercepter/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-api/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/MessageEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/RabbitMQConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/UserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/exceptions/GraceExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/CommentMapperCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/CommentMapperCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapperCustom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapperCustom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/MsgServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/MsgServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +44,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -103,7 +90,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.42195123&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
@@ -131,7 +118,14 @@
       <recent name="com.wangguo.my" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.idouyin-8088">
     <configuration name="GeneratorDisplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.imooc.mybatis.utils.GeneratorDisplay" />
       <module name="mybatis-generator-for-imooc" />
@@ -184,7 +178,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="idouyin-8088" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="book-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangguo.Application" />
+      <option name="VM_PARAMETERS" value="-DPORT=8088" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="idouyin-8099" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="book-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangguo.Application" />
       <extension name="coverage">
@@ -197,9 +201,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.com.example.thrd.mybatis.util.GeneratorDisplay" />
+      <item itemvalue="Application.com.wangguo.mybatis.util.GeneratorDisplay" />
+      <item itemvalue="Application.GeneratorDisplay" />
+      <item itemvalue="Application.SMSUtils" />
+      <item itemvalue="Spring Boot.idouyin-8088" />
+      <item itemvalue="Spring Boot.idouyin-8099" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.idouyin-8099" />
         <item itemvalue="Application.SMSUtils" />
         <item itemvalue="Application.com.wangguo.mybatis.util.GeneratorDisplay" />
         <item itemvalue="Application.com.example.thrd.mybatis.util.GeneratorDisplay" />
@@ -219,7 +231,8 @@
       <workItem from="1684810664900" duration="3430000" />
       <workItem from="1684814129559" duration="13191000" />
       <workItem from="1684843715874" duration="45914000" />
-      <workItem from="1685087525411" duration="98756000" />
+      <workItem from="1685087525411" duration="138976000" />
+      <workItem from="1685756838334" duration="3554000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -277,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685110631620</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <created>1685503097454</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685503097454</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

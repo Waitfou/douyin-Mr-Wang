@@ -52,7 +52,7 @@ public class PassportController extends BaseInfoProperties {
         redis.setnx60s(MOBILE_SMSCODE + ":" + userIp, userIp);
         String code = (int) ((Math.random() * 9 + 1) * 10000) + "";
 //        smsUtils.sendSMS(MyInfo.getMobile(), code);
-        smsUtils.sendSMS(mobile, code);
+//        smsUtils.sendSMS(mobile, code);
         log.info(code);
         // 把验证码放入redis中，用于后续的验证
         redis.set(MOBILE_SMSCODE + ":" + mobile, code, 30 * 60);
