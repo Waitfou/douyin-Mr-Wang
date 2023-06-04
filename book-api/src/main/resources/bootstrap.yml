@@ -1,6 +1,13 @@
+# 在Nacos server中配置Nacos server的地址和应用名
+#  说明：之所以需要配置 spring.application.name ，是因为它是构成 Nacos
+#  配置管理 dataId字段的一部分。在 Nacos Spring Cloud 中，dataId 的完整格式如下：
+#  ${prefix}-${spring.profiles.active}.${file-extension}
+#  参考：https://nacos.io/zh-cn/docs/quick-start-spring-cloud.html
 spring:
+  application:
+    name: wangguo-idouyin-nacos
   cloud:
     nacos:
       config:
-        group: 192.168.81.130:8848 # nacos所在地址
         file-extension: yaml  # yaml配置文件
+        server-addr: 122.152.224.99:8848 # nacos所在的地址

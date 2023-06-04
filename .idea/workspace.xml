@@ -5,35 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/RabbitMQConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/MsgController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/intercepter/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-api/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/enums/MessageEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/RabbitMQConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/VlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/VlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/CommentMapperCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/mapper/CommentMapperCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapperCustom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/resources/mapper/CommentMapperCustom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/CommentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/MsgServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/MsgServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +214,8 @@
       <workItem from="1684814129559" duration="13191000" />
       <workItem from="1684843715874" duration="45914000" />
       <workItem from="1685087525411" duration="138976000" />
-      <workItem from="1685756838334" duration="3554000" />
+      <workItem from="1685756838334" duration="11633000" />
+      <workItem from="1685869957037" duration="10214000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -297,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685503097454</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <created>1685763769250</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685763769250</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +319,16 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

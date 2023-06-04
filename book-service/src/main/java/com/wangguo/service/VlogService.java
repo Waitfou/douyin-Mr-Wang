@@ -124,4 +124,5 @@ public interface VlogService {
      * 根据主键查询vlog
      */
     public Vlog getVlog(String id);
+    public void flushCounts(String vlogId, Integer counts);
 }

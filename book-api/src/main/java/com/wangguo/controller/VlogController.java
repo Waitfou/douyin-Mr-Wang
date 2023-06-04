@@ -10,13 +10,17 @@ import com.wangguo.vo.IndexVlogVO;
 import com.wangguo.vo.VlogerVO;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @Api(tags = "VlogController 短视频相关业务功能的接口")
 @RequestMapping("vlog")
 @RestController
+@RefreshScope
 public class VlogController extends BaseInfoProperties {
     @Autowired
     private VlogService vlogService;
@@ -122,6 +126,8 @@ public class VlogController extends BaseInfoProperties {
         return GraceJSONResult.ok(gridResult);
     }
 
+    @Value("${nacos.counts}") // 在nacos的配置类中配置
+    private Integer nacosCounts;
     @PostMapping("like")
     public GraceJSONResult like(@RequestParam String userId,
                                 @RequestParam String vlogerId,
@@ -134,6 +140,18 @@ public class VlogController extends BaseInfoProperties {
 
         // 把点赞的信息存入redis方便使用
         redis.set(REDIS_USER_LIKE_VLOG + ":" + userId + ":" + vlogId, "1");
+
+
+        // 点赞之后，要判断是否将我点赞的个数刷新到数据库（通过动态配置阈值）
+        String countsStr = redis.get(REDIS_VLOG_BE_LIKED_COUNTS + ":" + vlogId);
+        log.info("======" + REDIS_VLOG_BE_LIKED_COUNTS + ":" + vlogId + "======");
+        Integer counts = 0;
+        if (StringUtils.isNotBlank(countsStr)) {
+            counts = Integer.valueOf(countsStr);
+            if (counts >= nacosCounts) {   // todo 以后每一次超过阈值的都要存入数据库，怎么优化？？
+                vlogService.flushCounts(vlogId, counts);
+            }
+        }
         return GraceJSONResult.ok();
     }
 

@@ -323,4 +323,13 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
 //    public Vlog getVlog(String id) {
 //        return null;
 //    }
+    @Transactional
+    @Override
+    public void flushCounts(String vlogId, Integer counts) {
+        Vlog vlog = new Vlog();
+        vlog.setId(vlogId);
+        vlog.setLikeCounts(counts);
+        // 通过设置的主键更新
+        vlogMapper.updateByPrimaryKeySelective(vlog);
+    }
 }
