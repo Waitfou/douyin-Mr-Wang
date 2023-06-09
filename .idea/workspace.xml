@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="commit">
+    <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="对服务器地址的脱敏上传">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Knife4jConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/Knife4jConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/FansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/FansController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/PassportController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/VlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/java/com/wangguo/controller/VlogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-api/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/book-api/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/resources/tencentcloud.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/VlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/GraceJSONResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/grace/result/GraceJSONResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/MinIOUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/PagedGridResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-common/src/main/java/com/wangguo/utils/PagedGridResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-mapper/src/main/java/com/wangguo/repository/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/mo/MessageMO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/model/Stu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/VlogerVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-model/src/main/java/com/wangguo/vo/VlogerVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/BaseInfoProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/base/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/FansServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/wangguo/service/impl/VlogServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,30 +64,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8 (3)&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/douyin/douyin-master/wangguo-red-book-dev/book-common/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.42195123&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;adfb4822068646fa955f235a5b79ba9d&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8 (3)",
+    "last_opened_file_path": "D:/douyin/douyin-master/wangguo-red-book-dev/book-common/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.42195123",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "spring.configuration.checksum": "adfb4822068646fa955f235a5b79ba9d"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -215,7 +224,7 @@
       <workItem from="1684843715874" duration="45914000" />
       <workItem from="1685087525411" duration="138976000" />
       <workItem from="1685756838334" duration="11633000" />
-      <workItem from="1685869957037" duration="10214000" />
+      <workItem from="1685869957037" duration="38716000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -287,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685763769250</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="对服务器地址的脱敏上传">
+      <created>1685885262133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685885262134</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +334,8 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="second commit" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="对服务器地址的脱敏上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="对服务器地址的脱敏上传" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

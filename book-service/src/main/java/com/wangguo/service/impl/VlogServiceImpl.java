@@ -288,7 +288,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
             if (StringUtils.isNotBlank(myId)) {
                 // 用户必定关注了该博主
                 v.setDoIFollowVloger(true);
-                // 判断当前用户是否点赞了该视频
+                // 判断当前用户是否点赞了该视频，便于前端更新视频上的信息
                 v.setDoILikeThisVlog(doILikeVlog(myId, vlogId));
             }
             // 获取当前视频被点赞的总数
@@ -310,10 +310,10 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
             if (StringUtils.isNotBlank(myId)) {
                 v.setDoIFollowVloger(true);
 
-                //判断用户是否点赞过视频
+                //判断用户是否点赞过视频，给设置给视图对象
                 v.setDoILikeThisVlog(doILikeVlog(myId, vlogId));
             }
-            // 获得当前视频被点赞过的总数
+            // 获得当前视频被点赞过的总数，并设置给视图对象
             v.setLikeCounts(getVlogBeLikedCounts(vlogId));
         }
         return setterPagedGrid(list, page);

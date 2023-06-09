@@ -14,6 +14,7 @@ public class GraceJSONResult {
     /**
      * 成功返回，带有数据的，直接往ok方法丢data数据即可
      */
+    // 类函数/静态函数
     public static GraceJSONResult ok(Object data) {
         return new GraceJSONResult(data);
     }

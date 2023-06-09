@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
- * 用于展示我已经关注/我的粉丝页面的视图对象
+ * 用于展示我已经关注人的视图对象
  */
 @Data
 @AllArgsConstructor

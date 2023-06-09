@@ -6,8 +6,6 @@ import com.wangguo.enums.YesOrNo;
 import com.wangguo.grace.result.GraceJSONResult;
 import com.wangguo.service.VlogService;
 import com.wangguo.utils.PagedGridResult;
-import com.wangguo.vo.IndexVlogVO;
-import com.wangguo.vo.VlogerVO;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -33,6 +31,7 @@ public class VlogController extends BaseInfoProperties {
     // 可以在参数部分添加一些校验VlogBO的操作
     @PostMapping("publish")
     public GraceJSONResult publish(@RequestBody VlogBO vlogBO) { // 前端传送过来的data，和VlogBO中的内容一一对应
+        // 根据前端传递的BO实体信息创建Vlog
         vlogService.createVlog(vlogBO);
         return GraceJSONResult.ok();
     }

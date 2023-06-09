@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 该类提供redis的操作器
+ * 该类设置redis的操作器
  * 以及我这个用户的核心信息
  */
 public class BaseInfoProperties {

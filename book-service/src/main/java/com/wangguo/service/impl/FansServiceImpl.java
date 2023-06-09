@@ -53,7 +53,7 @@ public class FansServiceImpl extends BaseInfoProperties implements FansService {
     @Transactional // 关注的行为必须声明好事务，因为关注的时候可能只是关注了，但是没有把朋友关系更新，那么此时就要回退
     @Override
     public void doFollow(String myId, String vlogerId) {
-        String fid = sid.nextShort();
+        String fid = sid.nextShort(); // 获取全局ID的下一个。
         Fans fans = new Fans();
         fans.setId(fid);
         fans.setFanId(myId);
@@ -65,7 +65,7 @@ public class FansServiceImpl extends BaseInfoProperties implements FansService {
             // 如果对方也关注了我，那么就把我和他之间的关系更新为朋友关系
             fans.setIsFanFriendOfMine(YesOrNo.YES.type);
             vloger.setIsFanFriendOfMine(YesOrNo.YES.type);
-            // 更改我要关注的博主和我之间的关系
+            // 更改我要关注的博主和我之间的关系为朋友关系
             fansMapper.updateByPrimaryKeySelective(vloger);
         } else {
             fans.setIsFanFriendOfMine(YesOrNo.NO.type);
@@ -79,6 +79,7 @@ public class FansServiceImpl extends BaseInfoProperties implements FansService {
         messageMO.setToUserId(vlogerId);
 
         // 优化：使用mq异步解耦，防止对非重要消息入库失败之后对已经保存的重要消息进行回滚
+        // 这里是创建生产者发送消息
         rabbitTemplate.convertAndSend(RabbitMQConfig.EXCHANGE_MSG, "sys.msg." + MessageEnum.FOLLOW_YOU.enValue, JsonUtils.objectToJson(messageMO));
     }
 
@@ -110,6 +111,8 @@ public class FansServiceImpl extends BaseInfoProperties implements FansService {
             Fans pendingFan = queryFansRelationship(vlogerId, myId);
             // 把对方和我的关系变成非朋友关系
             pendingFan.setIsFanFriendOfMine(YesOrNo.NO.type);
+            // 把关系的更新同步到后台数据库中
+            fansMapper.updateByPrimaryKeySelective(pendingFan);
         }
         // 删除我和对方关联的记录，但是对方和我关联的记录不删除，注意两者的区别
         fansMapper.delete(fan);

@@ -33,6 +33,10 @@ public class RabbitMQConfig {
     }
 
     // 绑定交换机和队列
+    // 通过将 @Qualifier 注解与我们想要使用的特定 Spring bean 的名称一起进行装配，
+    // Spring 框架就能从多个相同类型并满足装配要求的 bean 中找到我们想要的，避免产生歧义
+    // 该注解在RabbitMQ中经常使用
+    // 用来解决@Autowire会产生歧义的问题(也就是同时匹配到多个Bean)
     public Binding binding(@Qualifier(EXCHANGE_MSG) Exchange exchange,
                            @Qualifier(QUEUE_SYS_MSG) Queue queue) {
         return BindingBuilder

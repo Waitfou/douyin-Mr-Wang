@@ -17,12 +17,12 @@ public class Knife4jConfig {
         Docket docket = new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfoBuilder()
                         //.title("swagger-bootstrap-ui-demo RESTful APIs")
-                        .description("慕红薯短视频实战接口文档")
+                        .description("idouyin短视频项目接口文档")
                         .termsOfServiceUrl("http://www.xx.com/")
-                        .contact(new Contact("lee", "http://www.imooc.com/", "abc@imooc.com"))
+                        .contact(new Contact("wangguo", "http://www.xxxx.com/", "1414516753@qq.com"))
                         .version("1.0")
                         .build())
-                //分组名称
+                //分组名称K
                 .groupName("2.X版本")
                 .select()
                 //这里指定Controller扫描包路径

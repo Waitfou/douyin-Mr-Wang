@@ -6,11 +6,9 @@ import com.wangguo.grace.result.ResponseStatusEnum;
 import com.wangguo.pojo.Users;
 import com.wangguo.service.FansService;
 import com.wangguo.service.UserService;
-import io.netty.util.internal.StringUtil;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -75,6 +73,7 @@ public class FansController extends BaseInfoProperties {
         fansService.doCancel(myId, vlogerId);
         // 然后把redis中的相关数据进行修改，delta表示步长, decrement表示累减
         redis.decrement(REDIS_MY_FOLLOWS_COUNTS + ":" + myId, 1);
+        // 把被取消关注的人的粉丝数减1
         redis.decrement(REDIS_MY_FANS_COUNTS + ":" + vlogerId, 1);
 
         // 删除我和博主之间的朋友关系

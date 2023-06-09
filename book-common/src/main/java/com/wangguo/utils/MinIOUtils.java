@@ -23,7 +23,7 @@ import java.util.Optional;
 @Slf4j
 public class MinIOUtils {
 
-    private static MinioClient minioClient;
+    private static MinioClient minioClient;  //创建MinIO客户端
 
     private static String endpoint; // minio服务器地址
     private static String bucketName; // minio中桶的名字
@@ -33,7 +33,7 @@ public class MinIOUtils {
     private static Integer fileSize;
 
 
-    private static final String SEPARATOR = "/";
+    private static final String SEPARATOR = "/";  //声明分隔符
 
     public MinIOUtils() {
     }
