@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="readme.md更新">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/项目思维导图/仿抖音后端项目 By wangguo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/project-introduce/project-introduceByWangguo.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/项目思维导图/仿抖音后端项目 By wangguo.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/project-introduce/project-introduceByWangguo.xmind" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +215,7 @@
       <workItem from="1688904973336" duration="627000" />
       <workItem from="1688907697188" duration="2428000" />
       <workItem from="1689420958249" duration="672000" />
-      <workItem from="1689601688785" duration="1129000" />
+      <workItem from="1689601688785" duration="1486000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -321,7 +322,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689602730858</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="readme.md更新">
+      <created>1689602837246</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1689602837246</updated>
+    </task>
+    <task id="LOCAL-00017" summary="readme.md更新">
+      <created>1689602934699</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1689602934699</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
