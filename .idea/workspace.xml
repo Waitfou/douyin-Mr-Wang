@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afff6aa1-1a5b-447f-a0a0-58217e016b52" name="Changes" comment="readme.md更新">
-      <change beforePath="$PROJECT_DIR$/项目思维导图/仿抖音后端项目 By wangguo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/project-introduce/project-introduceByWangguo.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/项目思维导图/仿抖音后端项目 By wangguo.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/project-introduce/project-introduceByWangguo.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.assets/仿抖音后端项目1 By wangguo_页面_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.assets/仿抖音后端项目1 By wangguo_页面_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.assets/仿抖音后端项目1 By wangguo_页面_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.assets/仿抖音后端项目1 By wangguo_页面_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.assets/仿抖音后端项目1 By wangguo_页面_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.assets/仿抖音后端项目1 By wangguo_页面_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8 (3)",
-    "last_opened_file_path": "D:/douyin/douyin-master/wangguo-red-book-dev/项目思维导图",
+    "last_opened_file_path": "D:/douyin/douyin-master/wangguo-red-book-dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,11 +81,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\douyin\douyin-master\wangguo-red-book-dev" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\项目思维导图" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-common\src\main\java" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-common\src\main\java\com\wangguo\exceptions" />
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-mapper\src\main\resources" />
-      <recent name="D:\douyin\douyin-master\wangguo-red-book-dev\book-model\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\douyin\douyin-master\wangguo-red-book-dev" />
@@ -215,7 +220,7 @@
       <workItem from="1688904973336" duration="627000" />
       <workItem from="1688907697188" duration="2428000" />
       <workItem from="1689420958249" duration="672000" />
-      <workItem from="1689601688785" duration="1486000" />
+      <workItem from="1689601688785" duration="2242000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1684807886629</created>
@@ -336,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1689602934699</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="readme.md更新">
+      <created>1689603195003</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1689603195003</updated>
+    </task>
+    <task id="LOCAL-00019" summary="readme.md更新">
+      <created>1689603341180</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1689603341180</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
