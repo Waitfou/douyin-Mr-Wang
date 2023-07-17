@@ -1,13 +1,15 @@
 server:
-  port: 8099
+  port: ${port:8099}      # 直接运行的默认端口是8099.但是可以动态传参端口号
 
 spring:
+  jackson:
+    time-zone: GMT+8
   datasource:                                     # 数据源的相关配置
     type: com.zaxxer.hikari.HikariDataSource      # 数据源的类型，可以更改为其他的数据源配置，比如druid
     driver-class-name: com.mysql.cj.jdbc.Driver      # mysql/MariaDB 的数据库驱动类名称
-    url: jdbc:mysql://localhost:3306/wangguo-red-book-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&&serverTimezone=UTC
+    url: jdbc:mysql://122.152.224.99:3306/wangguo-red-book-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&&serverTimezone=UTC
     username: root
-    password: 12345678
+    password: Wg2034110399.
     hikari:
       connection-timeout: 30000               # 等待连接池分配连接的最大时间（毫秒），超过这个时长还没有可用的连接，则会抛出SQLException
       minimum-idle: 5                         # 最小连接数
@@ -18,26 +20,26 @@ spring:
       max-lifetime: 18000000                  # 连接池的最大生命时长（毫秒），超时则会被释放（retired）
       connection-test-query: SELECT 1
   redis:
-    host: 192.168.81.130
+    host: 122.152.224.99
     port: 6379
     database: 0
-    password: 12345678
+    password: idouyin
   data:
     mongodb:
-      uri: mongodb://root:12345678@192.168.81.140:27017
+      uri: mongodb://root:root@122.152.224.99:27017
       database: wangguo-douyin
   rabbitmq:
-    host: 192.168.81.140
-    port: 15672
+    host: 122.152.224.99
+    port: 5672
     username: wangguo
     password: 12345678
-    virtual-host: wangguo-idouyin
-#  application:
-#    name: wangguo-idouyin-nacos
+    virtual-host: idouyin
+  #  application:
+  #    name: wangguo-idouyin-nacos
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.81.130:8848 # nacos所在地址
+        server-addr: 122.152.224.99:8848 # nacos所在地址
 # 打开监控
 management:
   endpoint:
@@ -46,10 +48,10 @@ management:
         include: '*'
 # minio配置
 minio: # 注意是小写
-  endpoint: http://192.168.81.130:9000 # MinIO服务地址
-  fileHost: http://192.168.81.130:9000 # 文件地址host
+  endpoint: http://122.152.224.99:9000 # MinIO服务地址
+  fileHost: http://122.152.224.99:9000 # 文件地址host
   bucketName: idouyin # 存储桶bucket名称
-  accessKey: ROOT # 用户名
+  accessKey: root # 用户名
   secretKey: 12345678 # 密码
-  imgSize:   # 图片大小限制，单位：m
-  fileSize: # 文件大小限制，单位：m
+  imgSize:  1024 # 图片大小限制，单位：m
+  fileSize: 1024 # 文件大小限制，单位：m

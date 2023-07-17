@@ -9,7 +9,7 @@ spring:
   application:
     name: wangguo-idouyin-nacos
   profiles:
-    active: dev
+    active: prod
   servlet:
     multipart:
       max-file-size: 2MB # 文件上传大小
@@ -17,7 +17,7 @@ spring:
 
 # 整合mybatis
 mybatis:
-  type-aliases-package: com.imooc.pojo       # 所有pojo类所在的包路径
+  type-aliases-package: com.wangguo.pojo       # 所有pojo类所在的包路径
   mapper-locations: classpath:mapper/*.xml    # mapper映射文件
 
 # 通用mapper工具的配置

@@ -5,9 +5,9 @@ spring:
   datasource:                                     # 数据源的相关配置
     type: com.zaxxer.hikari.HikariDataSource      # 数据源的类型，可以更改为其他的数据源配置，比如druid
     driver-class-name: com.mysql.cj.jdbc.Driver      # mysql/MariaDB 的数据库驱动类名称
-    url: jdbc:mysql://localhost:3306/wangguo-red-book-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&&serverTimezone=UTC
+    url: jdbc:mysql://192.168.81.130:3306/wangguo-red-book-dev?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&&serverTimezone=UTC
     username: root
-    password: 12345678
+    password: Wg2034110399.
     hikari:
       connection-timeout: 30000               # 等待连接池分配连接的最大时间（毫秒），超过这个时长还没有可用的连接，则会抛出SQLException
       minimum-idle: 5                         # 最小连接数
@@ -32,7 +32,10 @@ spring:
     username: wangguo
     password: 12345678
     virtual-host: wangguo-idouyin
-#  application:
+  jackson:
+    time-zone: GMT+8
+
+  #  application:
 #    name: wangguo-idouyin-nacos
   cloud:
     nacos:
