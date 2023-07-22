@@ -10,8 +10,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
-@Configuration
-@EnableSwagger2WebMvc
+@Configuration // 表示该类是一个配置类，用于配置Bean和其他组件
+@EnableSwagger2WebMvc // 这个注解启用Swagger2在Spring MVC应用程序中的功能，允许生成和展示API文档。或者使用专门为Knife4j提供的@EnableKnife4j注解。
 public class Knife4jConfig {
     public Docket defultApi2() {
         Docket docket = new Docket(DocumentationType.SWAGGER_2)

@@ -5,16 +5,14 @@ import java.util.List;
 /**
  * 
  * @Title: PagedGridResult.java
- * @Package com.imooc.utils
  * @Description: 用来返回分页Grid的数据格式
- * Copyright: Copyright (c) 2021
  */
-	public class PagedGridResult {
+public class PagedGridResult {
 
-		private int page;			// 当前页数
-		private long total;			// 总页数
-		private long records;		// 总记录数
-		private List<?> rows;		// 每行显示的内容
+	private int page;			// 当前页数
+	private long total;			// 总页数
+	private long records;		// 总记录数
+	private List<?> rows;		// 每行显示的内容
 
 	public int getPage() {
 		return page;

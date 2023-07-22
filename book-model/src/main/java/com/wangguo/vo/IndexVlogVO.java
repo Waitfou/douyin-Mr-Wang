@@ -9,7 +9,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class IndexVlogVO { // 首页Vlog视图对象，返回给前端用于展示的
+public class IndexVlogVO { // 首页Vlog视图对象，返回给前端用于展示的，就是专门展示视频的。
     private String vlogId;
     private String vlogerId;
     private String vlogerFace;

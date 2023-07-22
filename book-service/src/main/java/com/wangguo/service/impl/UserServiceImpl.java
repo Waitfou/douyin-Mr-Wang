@@ -77,7 +77,7 @@ public class UserServiceImpl implements UserService {
         user.setCreatedTime(new Date());
         user.setUpdatedTime(new Date());
 
-        usersMapper.insert(user);
+        usersMapper.insert(user); // 要往数据表中插入数据了，需要保证事务的ACID特性。
         return user;
     }
 

@@ -67,6 +67,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
         vlog.setIsPrivate(YesOrNo.NO.type);
         vlog.setCreatedTime(new Date());
         vlog.setUpdatedTime(new Date());
+        // Mapper需要传入的就是pojo对象。
         vlogMapper.insert(vlog);
     }
 
@@ -75,7 +76,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
         /**
          * 该map集合中放查询条件
          */
-        PageHelper.startPage(page, pageSize);
+        PageHelper.startPage(page, pageSize); // 设置页面号和页面大小
         Map<String, Object> map = new HashMap<>();
         if (StringUtils.isNotBlank(search)) {
             map.put("search", search);
@@ -181,7 +182,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
         criteria.andEqualTo("vlogerId", userId);
         criteria.andEqualTo("isPrivate", yesOrNo);
 
-        PageHelper.startPage(page, pageSize); // 对查询的结果进行分页
+        PageHelper.startPage(page, pageSize); // 对查询的结果进行分页,page表示第几页，pageSize表示这页的个数，前端通过滑动更新page然后查询出结果。
         // 根据where条件中中的vlogerId的值和isPrivate的值在vlog表中查询符合条件的结果
         List<Vlog> list = vlogMapper.selectByExample(example);
 
@@ -226,7 +227,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
         // 创建一个要取消点赞的视频信息的实体
         likedVlog.setVlogId(vlogId);
         likedVlog.setUserId(userId);
-        myLikedVlogMapper.delete(likedVlog); // 根据括号里面的内容对应删除响应的喜欢视频的信息
+        myLikedVlogMapper.delete(likedVlog); // 根据传入的POJO信息删除对应的喜欢视频的信息
     }
 
     /**
@@ -257,6 +258,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
         PageHelper.startPage(page, pageSize);
         Map<String, Object> map = new HashMap<>();
         map.put("userId", userId);
+        // 根据用户id查询喜欢的视频列表
         List<IndexVlogVO> list = vlogMapperCustom.getMyLikedVlogList(map);
         return setterPagedGrid(list, page);
     }
@@ -308,7 +310,7 @@ public class VlogServiceImpl extends BaseInfoProperties implements VlogService {
             String vlogId = v.getVlogId();
 
             if (StringUtils.isNotBlank(myId)) {
-                v.setDoIFollowVloger(true);
+                v.setDoIFollowVloger(true); // 一定是关注的，因为是朋友嘛，那么一定互相关注了的。
 
                 //判断用户是否点赞过视频，给设置给视图对象
                 v.setDoILikeThisVlog(doILikeVlog(myId, vlogId));

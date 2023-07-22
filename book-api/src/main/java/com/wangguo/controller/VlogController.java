@@ -134,7 +134,7 @@ public class VlogController extends BaseInfoProperties {
         // 把我点赞的视频的相关点赞信息保存到数据库
         vlogService.userLikeVlog(userId, vlogId);
         // 用户喜欢了一个视频之后，那么该视频的赞就要+1，该视频的发布者的赞也要加1
-        redis.increment(REDIS_VLOGER_BE_LIKED_COUNTS + ":" + vlogerId, 1);
+        redis.increment(REDIS_VLOGER_BE_LIKED_COUNTS + ":" + vlogerId, 1); // 是原子操作，在多线程下是线程安全的
         redis.increment(REDIS_VLOG_BE_LIKED_COUNTS + ":" + vlogId, 1);
 
         // 把点赞的信息存入redis方便使用

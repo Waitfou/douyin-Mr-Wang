@@ -47,7 +47,7 @@ public class PassportController extends BaseInfoProperties {
         }
         // 获取用户IP
         String userIp = IPUtil.getRequestIp(request);
-        redis.setnx60s(MOBILE_SMSCODE + ":" + userIp, userIp);
+        redis.setnx60s(MOBILE_SMSCODE + ":" + userIp, userIp); // 把用户的ip保存到redis中。
         String code = (int) ((Math.random() * 9 + 1) * 10000) + "";
         smsUtils.sendSMS(MyInfo.getMobile(), code);
         smsUtils.sendSMS(mobile, code);
@@ -69,6 +69,9 @@ public class PassportController extends BaseInfoProperties {
         String mobile = registLoginBO.getMobile();
         String code = registLoginBO.getSmsCode();
 
+
+
+
         // 1、从redis中获得验证码进行校验是否匹配
         String redisCode = redis.get(MOBILE_SMSCODE + ":" + mobile);
         if (StringUtils.isBlank(redisCode) || !redisCode.equalsIgnoreCase(code)) {
@@ -81,7 +84,19 @@ public class PassportController extends BaseInfoProperties {
             // 如果用户没有注册过，那么就注册信息
             user = userService.createUser(mobile);
         }
-        // 保存用户会话信息
+        // 删除旧的token信息
+        /**优化点1：实现旧设备的下线，从而实现单一设备登录
+         *
+         */
+        /**
+         * start*/
+        String oldToken = redis.get(REDIS_USER_TOKEN + ":" + user.getId());
+        if (oldToken != null) {
+            redis.del(REDIS_USER_TOKEN + ":" + user.getId());
+        }
+        /**
+         * end */
+        // 保存用户会话信息，UUID能够生成在分布式系统上唯一的标识符。
         String uToken = UUID.randomUUID().toString();
         redis.set(REDIS_USER_TOKEN + ":" + user.getId(), uToken);
 
